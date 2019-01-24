@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+
+
+tempDirectory: D:\\
+
+#tempDirectory: /temp

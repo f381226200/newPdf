@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>pdf</title>
+</head>
+<body>
+<br/><br/><br/><br/><br/><br/><br/>
+<div align="center">
+<form id="uploadForm" th:action="@{/splitPdf}" method="post" enctype="multipart/form-data">
+    pdf file： <input type="file" name="file"/>
+    <!--<P>storage directory：<input type="text" name="directory"/></P>
+    <P>file name：<input type="text" name="fileName"/></P>-->
+    <input style="height: 26px;width: 70px;" type="submit" value="start"/>
+    <h2 th:text="${msg}" style="color: chartreuse;"></h2>
+</form>
+</div>
+</body>
+</html>
